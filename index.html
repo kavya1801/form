@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FORM
+        </title>
+        <style>
+            body{
+                background-image: url(pic/bg.jpg);
+                background-size: 100%;
+            }
+            h2{
+                text-align:left;
+                display:inline-block;
+                width:200px;
+            }
+            label{
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>FORM CREATION</h1>
+        </center>
+        <hr/>
+        <form>
+            <label style="padding-right: 20px ;">First Name </label>
+            <input type="text" id="t1" name="t1" required> <br/> <br/>
+            <label style="padding-right: 22px ;">Last Name </label> 
+            <input type="text" id="t2" name="t2"> <br/> <br/>
+            <label style="padding-right: 42px ;" >Roll no </label>
+            <input type="text" id="t3" name="t3" pattern="[0-9]{2}[A-Z]{3}[0-9]{3}" > <br/> <br/>
+            <label style="padding-right: 55px ;" >DOB</label>
+            <input type="date" id="dob" name="dob" min="1900-01-01" max="2021-12-31" style="padding-right: 35px;"> <br/> <br/>
+            <label style="padding-right: 62px ;">Age</label> 
+            <input type="number" id="age" name="age" min="18" max="25" style="padding-right: 100px;"> <br/> <br/>
+            <label style="padding-right: 50px ;">Email</label>
+            <input type="email" id="email" name="email"> <br/> <br/>
+            <label style="padding-right: 48px ;">Phone</label>
+            <input type="text" id="phone" name="phone" pattern="[0-9]{10}"> <br/> <br/>
+            <label style="padding-right: 36px ;">Gender</label>
+            <input type="radio" name="Gender" id="r1">Male 
+            <input type="radio" name="Gender" id="r2">Female
+            <input type="radio" name="Gender" id="r3">Transgender  <br/> <br/>
+            <label style="padding-right: 35px ;">Skillset</label>
+            <input type="checkbox" name="skill" id="s1">C 
+            <input type="checkbox" name="skill" id="s2">C++ 
+            <input type="checkbox" name="skill" id="s3">JAVA 
+            <input type="checkbox" name="skill" id="s4">PYTHON <br/> <br/>
+            <label style="padding-right: 35px ;">Interest</label>
+            <input type="checkbox" name="area" id="a1">DBMS
+            <input type="checkbox" name="area" id="a2">CO 
+            <input type="checkbox" name="area" id="a3">DS 
+            <input type="checkbox" name="area" id="a4">Web Tech
+            <input type="checkbox" name="area" id="a5">CN
+            <input type="checkbox" name="area" id="a5">OS <br/> <br/>
+            <label style="padding-right: 50px ;">Color</label>
+            <input type="color" id="favcol" name="favcol"> <br/> <br/>
+            <label style="padding-right: 53px ;">State</label>
+            <select id="state" name="state">
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Andrapradesh">Andrapradesh</option>
+                <option value="Telungana">Telungana</option>
+            </select> <br/> <br/>
+            <label style="padding-right: 33px ;">Address</label> 
+            <textarea id="address" name="address" style="width: 400px; height: 100px;" ></textarea>  <br/> <br/> <br/>
+            <label style="padding-right: 25px ;">Password</label>
+            <input type="password" id="password" name="password"><br/> <br/>
+            <input type="button" name="data" value="submit"> &emsp14;
+            <input type="reset" name="clear" value="reset">
+        </form>
+    </body>
+</html>
